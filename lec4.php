@@ -128,6 +128,6 @@ function factorial($number) {
     return $result;
 }
 
-$number = 5; // Change this value to calculate the factorial of a different number
+$number = 5; 
 echo "The factorial of $number is " . factorial($number) . ".";
 ?>
