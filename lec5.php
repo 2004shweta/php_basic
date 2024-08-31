@@ -42,8 +42,8 @@ for ($i = 1; $i <= $limit; $i++) {
 
 <?php
 $associativeArray = [
-    "first" => "A",
-    "second" => "B",
+    "first" => "Abc",
+    "second" => "BCD",
     "third" => "C",
     "fourth" => "D",
     "fifth" => "E",
