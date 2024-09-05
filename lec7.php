@@ -11,7 +11,7 @@
 //output==no output
 
 
-$auth=1;
+auth=1;
 $status=1;
 if($result=(($auth==1)&& ($status!=0))){
     print "result is $result<br/>";
