@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Form</title>
+    <style>
+        .input-box {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin: 5px 0;
+            width: 100%;
+            box-sizing: border-box;
+            background-color: #f0f0f0; 
+        }
+        .textarea-box {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin: 5px 0;
+            width: 100%;
+            box-sizing: border-box;
+            background-color: #f0f0f0; 
+        }
+        .form-row {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .form-row label {
+            margin-right: 10px;
+        }
+        .form-row .input-box {
+            flex: 1;
+            margin-right: 10px;
+        }
+        .form-row select {
+            flex: 0 0 100px;
+            margin-right: 10px;
+            background-color: #f0f0f0; 
+        }
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            width: 100%;
+            max-width: 600px;
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="container">
+    <h2>Medicine Symposium Registration Form</h2>
+    <form action="form.php" method="post">
+        <div class="form-row">
+            <label for="title">Title:</label>
+            <select name="title" id="title" class="input-box" required>
+                <option value="" disabled selected>Title</option>
+                <option value="Mr">Mr</option>
+                <option value="Mrs">Mrs</option>
+                <option value="Miss">Miss</option>
+            </select>
+            
+            <label for="first_name">First Name:</label>
+            <input type="text" id="first_name" name="first_name" class="input-box" required>
+            
+            <label for="last_name">Last Name:</label>
+            <input type="text" id="last_name" name="last_name" class="input-box" required>
+        </div>
+        
+        <div class="form-row">
+            <label for="institution">Institution:</label>
+            <input type="text" id="institution" name="institution" class="input-box" required>
+        </div>
+        
+        <div class="form-row">
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" class="input-box" required>
+        </div>
+        
+        
+        <label for="note">Note to the Organizer:</label>
+        <br>
+        <textarea id="note" name="note" class="textarea-box" rows="4" cols="50"></textarea>
+        
+        
+        <input type="submit" value="Submit">
+    </form>
+</div>
+</body>
+</html>
